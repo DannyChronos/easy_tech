@@ -1,0 +1,11 @@
+<?php
+    if (isset($_POST['button'])) {
+        ini_set("display_error", 1);
+        error_reporting(E_ALL);
+        $nom=$_POST['name'];
+        $header="De".$_POST["email"];
+        $email="easytechstarup@gmail.com";
+        $tel=$_POST['tel'];
+        $message=$_POST['message'];
+    }
+    require_once("../view/index.php");
